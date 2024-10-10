@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000; 
+}
+
+header {
+    width: 100%;
+    height: 3cm;
+    background-color: rgb(27, 26, 26);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center; 
+    padding: 0.6cm 1cm;
+}
+
+.header-logo {
+    height: 1.8cm; 
+    width: auto; 
+    margin-right: 5px; 
+}
+
+.PHB {
+    color: #ffffff; 
+    font-size: 1cm;
+    font-weight: bold;
+}
+
+.PHB span {
+    color: #7a5cba; 
+}
+
+.nav-container {
+    margin-left: auto; 
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    font-size: 0.5cm;
+    color: #7a5cba; 
+    margin: 0 0.8cm;
+    text-decoration: none;
+    position: relative; 
+    transition: color 0.3s, transform 0.3s; 
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #a86bb5;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e3e0e4;
+    transform: translateY(-2px); 
+    font-weight: bold; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 4px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1); 
+}
+
+.nav-links a.gallery1 {
+    color: #e3e0e4; 
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 4px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    width: 100%;
+    height: 2cm;
+    background-color: #1a1a1a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+    font-size: 1rem;
+    bottom: 0;
+    position: fixed;
+    gap: 0.3cm;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    border-radius: 50px;
+ 
+} 
+
+.grid-item img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    vertical-align: middle;
+    box-shadow: 0 0 15px rgb(177, 17, 240);
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
