@@ -116,7 +116,8 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    width: 400px;
+    height: 500px;
     margin: 50px auto;
     padding: 20px;
     background: #3e1a5b; 
@@ -136,7 +137,7 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
+input[type="pass"],
 input[type="tel"],
 textarea,
 select {
@@ -149,9 +150,7 @@ select {
     color: #fff; 
 
 select {
-    appearance: none; 
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAAf8/9hAAAB8klEQVR42mL8//8/AzMDAzMDAgEFAwAAAO4B/7C5QCRfRAAAAABJRU5ErkJggg==') no-repeat right 10px center; /* Custom arrow */
-    background-size: 10px;
+    color: rgb(255, 255, 255);
 }
 
 button {
