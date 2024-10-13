@@ -109,7 +109,7 @@ footer {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; 
+    background-color: #000;
     color: #fff; 
     margin: 0;
     padding: 0;
@@ -146,8 +146,9 @@ select {
     border: 1px solid #b57cb2;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #1a0c20;
+    background-color: #1a0c20; 
     color: #fff; 
+}
 
 select {
     color: rgb(255, 255, 255);
