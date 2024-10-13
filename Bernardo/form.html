@@ -28,31 +28,45 @@
     <main>
         <div class="container">
             <h1>Form</h1>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="phone">Phone (optional):</label>
-                <input type="tel" id="phone" name="phone">
-    
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="" disabled selected>Select a Gender</option>
-                    <option value="general">Male</option>
-                    <option value="support">Female</option>
-                    <option value="feedback">LGBTQ</option>
-                </select>
-    
-                <label for="message">Comments:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-    
-                <button type="submit">Send</button>
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+        
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input type="pass" id="pass" name="pass" placeholder="Enter your password">
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone (optional):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+        
+                <div class="form-group">
+                    <label for="subject">Gender:</label>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected>Select a gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="lgbtq">LGBTQ+</option>
+                    </select>
+                </div>
+        
+                <button type="submit">Enter</button>
             </form>
         </div>
+    
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                alert('Congratulations! You\'re done!'); 
+                this.reset(); // 
+            });
+        </script>
     </main>
+    
 
     <footer>
         <p>&copy; 2024 Prince Bernardo. All rights reserved.</p>
